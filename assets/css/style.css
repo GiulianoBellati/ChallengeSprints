@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rasa:ital,wght@0,300..700;1,300..700&display=swap');
+
+ /* BORDA SUPERIOR */
+
+#superior-esquerda{
+  display: flex;
+  align-content: flex-start;
+}
+
+#superior-esquerda img{
+  max-width:45px;
+  max-height:45px;
+  width: auto;
+  height: auto;
+  margin-top:0.7%;
+  margin-left: 3px;
+}
+
+#superior-esquerda h1{
+  font-family: 'Racing Sans One', sans-serif;
+  margin-top:0.5%;
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 40px;
+  color: #3b6edd;
+}
+
+.container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  position: absolute;
+  top: 15px;
+  right: 0px;
+}
+
+.botao {
+  background-color: #ffffff;
+  color: black;
+  font-family: 'Rasa', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botao:hover {
+      background-color: #3b6edd65;
+}
+
+header {
+        height: 110vh;
+}
+
+header::before{
+  content: "";
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background-color: #ffffff;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  z-index: -10;
+}
+
+/* BORDA APRESENTAÇÃO */
+
+#secao-apresentacao{
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  gap: 5rem;
+}
+
+#secao-apresentacao p{
+  font-family: 'Racing Sans One', sans-serif;
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 30px;
+  color: #000000;
+}
+
+#secao-apresentacao img{
+  border-radius: 20%;
+  max-width:550px;
+  max-height:550px;
+  width: auto;
+  height: auto;
+}
+
+/* OFERTAS */
+
+    #secao-ofertas{
+      height: 25vh;
+      padding: 1rem;
+      background-color: #c1c5c475;
+    }
+
+    #secao-ofertas form{
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    #secao-ofertas h2 {
+      font-family: 'Racing Sans One', sans-serif;
+      text-align: center;
+      font-weight: 500;
+      font-size: 30px;
+    }
+
+    #secao-ofertas label {
+      font-family: 'Racing Sans One', sans-serif;
+      text-align: center;
+      font-weight: 500;
+      font-size: 23px;
+    }
+
+    .campo {
+      display: flex;
+      flex-direction: column;
+      margin-top: 7%;
+    }
+
+    input[type=text],
+    select
+    {
+      background-color: #272537;
+      color: white;
+      border-radius: .25rem;
+      border: 0;
+      padding: .5rem;
+    }
+
+/* FOOTER */
+
+    .footer {
+      background-color: #7E8382;
+      position:fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .footer-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      margin-right: 20px;
+    }
+
+    .footer-buttons button {
+      width: 25px;
+      height: 25px;
+      background-size: cover;
+      border: none;
+      cursor: pointer;
+    }
+
+    .youtube {
+      background-image: url("../images/youtube.png");
+    }
+
+    .youtube:hover{
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      transform: scale(1.1);
+    }
+
+    .instagram {
+      background-image: url("../images/instagram.png");
+    }
+
+    .instagram:hover{
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      transform: scale(1.1);
+    }
+
+    .whatsapp {
+      background-image: url("../images/whatsapp.png");
+    }
+    
+    .whatsapp:hover{
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      transform: scale(1.1);
+    }
