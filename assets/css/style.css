@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Racing+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rasa:ital,wght@0,300..700;1,300..700&display=swap');
 
- /* BORDA SUPERIOR */
-
 #superior-esquerda{
   display: flex;
   align-content: flex-start;
@@ -71,8 +69,6 @@ header::before{
   z-index: -10;
 }
 
-/* BORDA APRESENTAÇÃO */
-
 #secao-apresentacao{
   display: flex;
   align-items: center;
@@ -96,102 +92,45 @@ header::before{
   height: auto;
 }
 
-/* OFERTAS */
+#secao-ofertas{
+  height: 25vh;
+  padding: 1rem;
+  background-color: #3b6edd65;
+}
 
-    #secao-ofertas{
-      height: 25vh;
-      padding: 1rem;
-      background-color: #c1c5c475;
-    }
+#secao-ofertas form{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 500px;
+  margin: 0 auto;
+}
 
-    #secao-ofertas form{
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(2, 1fr);
-      max-width: 500px;
-      margin: 0 auto;
-    }
+#secao-ofertas h2 {
+  font-family: 'Racing Sans One', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+}
 
-    #secao-ofertas h2 {
-      font-family: 'Racing Sans One', sans-serif;
-      text-align: center;
-      font-weight: 500;
-      font-size: 30px;
-    }
+#secao-ofertas label {
+  font-family: 'Racing Sans One', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 23px;
+}
 
-    #secao-ofertas label {
-      font-family: 'Racing Sans One', sans-serif;
-      text-align: center;
-      font-weight: 500;
-      font-size: 23px;
-    }
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7%;
+}
 
-    .campo {
-      display: flex;
-      flex-direction: column;
-      margin-top: 7%;
-    }
-
-    input[type=text],
-    select
-    {
-      background-color: #272537;
-      color: white;
-      border-radius: .25rem;
-      border: 0;
-      padding: .5rem;
-    }
-
-/* FOOTER */
-
-    .footer {
-      background-color: #7E8382;
-      position:fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-
-    .footer-buttons {
-      display: flex;
-      justify-content: flex-end;
-      gap: 20px;
-      margin-right: 20px;
-    }
-
-    .footer-buttons button {
-      width: 25px;
-      height: 25px;
-      background-size: cover;
-      border: none;
-      cursor: pointer;
-    }
-
-    .youtube {
-      background-image: url("../images/youtube.png");
-    }
-
-    .youtube:hover{
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-      transform: scale(1.1);
-    }
-
-    .instagram {
-      background-image: url("../images/instagram.png");
-    }
-
-    .instagram:hover{
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-      transform: scale(1.1);
-    }
-
-    .whatsapp {
-      background-image: url("../images/whatsapp.png");
-    }
-    
-    .whatsapp:hover{
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-      transform: scale(1.1);
-    }
+input[type=text],
+select {
+  background-color: #272537;
+  color: white;
+  border-radius: .25rem;
+  border: 0;
+  padding: .5rem;
+}
